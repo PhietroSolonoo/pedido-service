@@ -13,4 +13,6 @@ public record CriarPedidoDTO(
         @NotEmpty(message = "Pedido deve ter pelo menos um item")
         List<ItemPedido> itens
 ) {
+    public Long clienteId() {
+    }
 }

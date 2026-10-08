@@ -13,4 +13,6 @@ public interface CatalogoFeignClient {
     // http://localhost:8081/api/catalogo/produtos/{id}
     @GetMapping("/api/catalogos/produtos/{id}")
     ProdutoDTO buscarProdutoPorid(@PathVariable Long id);
+
+    ProdutoDTO buscarProdutoPorId(Long produtoId);
 }
